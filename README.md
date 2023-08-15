@@ -4,8 +4,6 @@ Time-Series-Forecasting-for-Particles-PMCO-in-CDMX
 Artículo (Overleaf): https://www.overleaf.com/read/sbwhtrdfvjpp
 Code (Google colab): https://colab.research.google.com/drive/1dC-TTHUn46UtAEthWut3zgTQQ2YpShad?usp=sharing
 
-#**Probabilistic Time Series Forecasting for Particulate Matter PMCO with Transformers**
-###**Pronóstico probabilístico de series de tiempo para partículas PMCO con Transformers**
 ---
 
 ## Introduction
