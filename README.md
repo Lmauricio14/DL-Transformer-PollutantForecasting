@@ -13,7 +13,7 @@ El pronóstico de series temporales es un problema esencial en numerosos campos,
 
 Para nuestro estudio, utilizaremos datos proporcionados por la Red Automática de Monitoreo Atmosférico (RAMA), una iniciativa gestionada por la Secretaría de Medio Ambiente de la Ciudad de México (SEDEMA). La RAMA es responsable de monitorear y registrar la calidad del aire en la Ciudad de México, una de las metrópolis más grandes del mundo. En este estudio, nos enfocamos en las partículas fracción gruesa (PMCO), que son de especial interés debido a su capacidad de penetrar profundamente en los pulmones y en el torrente sanguíneo.
 
-## Selección de Datos
+## Data
 
 Para asegurar la relevancia y la fiabilidad de nuestro análisis, hemos seleccionado la base de datos de RAMA correspondiente a los años 2014-2018. Esta elección se fundamenta en dos consideraciones clave:
 
