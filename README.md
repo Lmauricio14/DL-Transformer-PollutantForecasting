@@ -9,17 +9,15 @@ Code (Google colab): https://colab.research.google.com/drive/1dC-TTHUn46UtAEthWu
 
 ## Introduction
 
-El pronóstico de series temporales es un problema esencial en numerosos campos, desde la ciencia y la tecnología hasta los negocios y la economía. En este contexto, las partículas en suspensión, conocidas como Particulate Matter (PM), representan un importante problema de salud pública y medioambiental, especialmente en áreas urbanas densamente pobladas como la Ciudad de México. Las partículas ultrafinas o partículas fracción gruesa (PMCO), son de especial interés debido a su capacidad de penetrar profundamente en los pulmones y en el torrente sanguíneo. Estas partículas son de tamaño micrométrico, específicamente, entre los valores de 2.5 μm o 10 μm de diámetro.
-
-Para nuestro estudio, utilizaremos datos proporcionados por la Red Automática de Monitoreo Atmosférico (RAMA), una iniciativa gestionada por la Secretaría de Medio Ambiente de la Ciudad de México (SEDEMA). La RAMA es responsable de monitorear y registrar la calidad del aire en la Ciudad de México, una de las metrópolis más grandes del mundo. En este estudio, nos enfocamos en las partículas fracción gruesa (PMCO), que son de especial interés debido a su capacidad de penetrar profundamente en los pulmones y en el torrente sanguíneo.
+El pronóstico de series temporales es crucial en diversos campos, incluyendo ciencia, tecnología, negocios y economía. Un aspecto significativo de salud pública y medioambiental es la concentración de partículas en suspensión, o Particulate Matter (PM), especialmente en áreas urbanas densas como la Ciudad de México. Las partículas fracción gruesa (PMCO), con tamaños micrométricos entre 2.5 μm y 10 μm de diámetro, son de especial preocupación debido a su capacidad de penetrar en los pulmones y el torrente sanguíneo. Para el estudio, se utilizarán datos proporcionados por la Red Automática de Monitoreo Atmosférico (RAMA), gestionada por la Secretaría de Medio Ambiente de la Ciudad de México (SEDEMA). RAMA tiene la responsabilidad de monitorear y registrar la calidad del aire en esta gran metrópolis. El estudio se enfoca específicamente en las partículas PMCO.
 
 ## Data
 
 Para asegurar la relevancia y la fiabilidad de nuestro análisis, hemos seleccionado la base de datos de RAMA correspondiente a los años 2014-2018. Esta elección se fundamenta en dos consideraciones clave:
 
-- **Estabilidad Temporal**: Optamos por estudiar los cinco años más estables y próximos a la actualidad. Tomamos la decisión de evitar los años 2019-2021, ya que la pandemia de SARS-CoV-2 impuso condiciones atípicas en la Ciudad de México (y en el mundo). La implementación de medidas como el trabajo y las escuelas virtuales, así como restricciones a la movilidad, redujeron significativamente el tráfico vehicular y modificaron de diversas maneras el comportamiento de la población. Esto, a su vez, tuvo un impacto en los niveles de contaminación del aire, lo que podría afectar la generalización de nuestros modelos de pronóstico.
+- **Estabilidad Temporal**: Optamos por estudiar los cinco años más estables y próximos a la actualidad. Tomamos la decisión de evitar los años 2019-2021, ya que la pandemia de SARS-CoV-2 impuso condiciones atípicas en la Ciudad de México (y en el mundo). 
 
-- **Calidad de los Datos**: Para nuestro análisis, seleccionamos las estaciones de monitoreo que presentan los registros más completos y confiables. Esto significa elegir las estaciones con la menor cantidad de datos faltantes durante el periodo de estudio. Esta selección meticulosa nos permite trabajar con un conjunto de datos robusto y representativo, minimizando la necesidad de imputar o interpolar datos faltantes.
+- **Calidad de los Datos**: Para nuestro análisis, seleccionamos las estaciones de monitoreo que presentan los registros más completos y confiables. Esto significa elegir las estaciones con la menor cantidad de datos faltantes durante el periodo de estudio y que estos datos faltantes esten lo mejor distribuidos. 
 
 ##  Probabilistic Forecasting
 
@@ -37,21 +35,7 @@ Esta investigación aborda también los desafíos asociados con el uso de Transf
 
 ### Objetivo General
 
-- Evaluar la eficacia de un modelo basado en Transformers en el pronóstico temporal de las concentraciones de Material Particulado Coarse (PMCO) con el fin de determinar su potencial como herramienta de predicción de alta precisión y eficiencia.
-
-### Objetivos Específicos
-
-1. **Recopilación de Datos:** 
-    - Recopilar y preparar un conjunto de datos históricos de concentraciones de Material Particulado Coarse (PMCO) y características temporales relevantes que servirán como entrada para el modelo. Esto incluirá datos de la Red Automática de Monitoreo Atmosférico (RAMA) gestionada por la Secretaría de Medio Ambiente de la Ciudad de México (SEDEMA) para el periodo 2014-2018.
-
-2. **Revisión Bibliográfica:** 
-    - Realizar una revisión bibliográfica exhaustiva sobre la contaminación del aire por partículas PMCO, sus efectos sobre la salud y el medio ambiente, y los métodos existentes para su monitoreo y pronóstico. 
-
-3. **Evaluación del Modelo:** 
-    - Evaluar el rendimiento del modelo basado en Transformers utilizando métricas de evaluación apropiadas, con el objetivo de determinar si este modelo es capaz de superar las limitaciones en precisión y eficiencia que presentan las herramientas de pronóstico actuales.
-
-4. **Optimización y Propuestas Futuras:** 
-    - Identificar y proponer posibles mejoras y extensiones al modelo. Sugerir áreas de investigación futura relacionadas con la aplicación de modelos basados en Transformers en pronósticos ambientales.
+- Evaluar la eficacia de un modelo basado en Transformers en el pronóstico temporal de las concentraciones de Material Particulado Coarse (PMCO) con el fin de determinar su potencial como herramienta de predicción de alta precisión y eficiencia. Probandolo para el forecasting de 6,9,12,24...
 
 ## Hipótesis de la Investigación
 
