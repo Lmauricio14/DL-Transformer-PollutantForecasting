@@ -14,13 +14,25 @@ El pronóstico de series temporales es crucial en diversos campos, incluyendo ci
 
 Para el estudio, se utilizarán datos proporcionados por la Red Automática de Monitoreo Atmosférico (RAMA), gestionada por la Secretaría de Medio Ambiente de la Ciudad de México (SEDEMA). RAMA tiene la responsabilidad de monitorear y registrar la calidad del aire en esta gran metrópolis. El estudio se enfoca específicamente en las partículas PMCO.
 
+![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/Mapa.PNG)
+
 ## Data
 
 Para asegurar la relevancia y la fiabilidad de nuestro análisis, hemos seleccionado la base de datos de RAMA correspondiente a los años 2014-2018. Esta elección se fundamenta en dos consideraciones clave:
 
 - **Estabilidad Temporal**: Optamos por estudiar los cinco años más estables y próximos a la actualidad. Tomamos la decisión de evitar los años 2019-2021, ya que la pandemia de SARS-CoV-2 impuso condiciones atípicas en la Ciudad de México (y en el mundo). 
 
-- **Calidad de los Datos**: Para nuestro análisis, seleccionamos las estaciones de monitoreo que presentan los registros más completos y confiables. Esto significa elegir las estaciones con la menor cantidad de datos faltantes durante el periodo de estudio y que estos datos faltantes esten lo mejor distribuidos. 
+- **Calidad de los Datos**: Para nuestro análisis, seleccionamos las estaciones de monitoreo que presentan los registros más completos y confiables. Esto significa elegir las estaciones con la menor cantidad de datos faltantes durante el periodo de estudio y que estos datos faltantes esten lo mejor distribuidos.
+
+![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/Imp_Estaci%C3%B3n_HGM.png)
+
+![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/Imp_Estaci%C3%B3n_AJM.png)
+
+![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/Imp_Estaci%C3%B3n_MGH.png)
+
+  - **HGM** con %5.7 (*Hospital General de México, Cuauhtémoc, CDMX*)
+  - **AJM** con %8.7 (*Ajusco Medio, Tlalpan, CDMX*)
+  - **MGH** con %13.3 (*Miguel Hidalgo, Miguel Hidalgo, CDMX*)
 
 ##  Probabilistic Forecasting
 
@@ -33,6 +45,8 @@ Para abordar la complejidad de los datos de series temporales, que son intrínse
 En esta investigación, adoptamos el Transformers, propuesto inicialmente por Vaswani et al. (2017), para la tarea de pronóstico probabilístico univariado de PMCO. La arquitectura Codificador-Decodificador del Transformers es una elección natural para el pronóstico de series temporales, ya que permite generar predicciones a varios pasos en el futuro a partir de datos observados, similar a cómo se generaría texto de manera autoregresiva en tareas de Procesamiento de Lenguaje Natural (NLP).
 
 Esta investigación aborda también los desafíos asociados con el uso de Transformers, como la selección de ventanas de contexto y predicción adecuadas, la incorporación de valores faltantes mediante el uso de máscaras, y la limitación computacional debido a los requisitos cuadráticos de cálculo y memoria del Transformers vainilla.
+
+![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Protocolo/Transformers-Arquitectura.PNG)
 
 ## Objetivos de la Investigación
 
