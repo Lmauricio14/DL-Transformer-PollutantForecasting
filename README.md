@@ -58,12 +58,12 @@ Esta investigación aborda también los desafíos asociados con el uso de Transf
 
 Al utilizar datos históricos de concentraciones de Material Particulado Coarse (PMCO) y características temporales como variables de entrada, los modelos basados en Transformers, que han demostrado ser efectivos en capturar dependencias a largo plazo en tareas de procesamiento de lenguaje natural, serán capaces de generar predicciones precisas de concentraciones futuras de PMCO como variable de salida. Esto se basa en el supuesto de que existen patrones temporales en las concentraciones de PMCO que pueden ser capturados por estos modelos.
 
-## Estaciones
+## Resultados
+
+### 6 days - 12 epoch
 
 ---
-## Resultados
-### 6 days - 12 epoch
----
+
 **HGM | RMSE: 6.324176146230774**
 ![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/17193475d5d8c853f80d160af1333414bc10074a/Plots/6-HGM.png)
 
@@ -74,10 +74,10 @@ Al utilizar datos históricos de concentraciones de Material Particulado Coarse 
 ![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/17193475d5d8c853f80d160af1333414bc10074a/Plots/6-MGH.png)
 
 
----
-## Resultados
 ### 9 days - 24 epoch
+
 ---
+
 **MGH | RMSE: 6.261936714057293**
 ![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/17193475d5d8c853f80d160af1333414bc10074a/Plots/9-HGM.png)
 
