@@ -40,3 +40,11 @@ Esta investigación aborda también los desafíos asociados con el uso de Transf
 ## Hipótesis de la Investigación
 
 Al utilizar datos históricos de concentraciones de Material Particulado Coarse (PMCO) y características temporales como variables de entrada, los modelos basados en Transformers, que han demostrado ser efectivos en capturar dependencias a largo plazo en tareas de procesamiento de lenguaje natural, serán capaces de generar predicciones precisas de concentraciones futuras de PMCO como variable de salida. Esto se basa en el supuesto de que existen patrones temporales en las concentraciones de PMCO que pueden ser capturados por estos modelos.
+
+---
+---
+
+Algunos resultados
+![**HGM | RMSE: 6.324176146230774**](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1e89efe4-1a01-46c4-97ca-78bfdb6b74c9/Untitled.png)
+
+**HGM | RMSE: 6.324176146230774**
