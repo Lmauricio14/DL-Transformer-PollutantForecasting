@@ -9,7 +9,9 @@ Code (Google colab): https://colab.research.google.com/drive/1dC-TTHUn46UtAEthWu
 
 ## Introduction
 
-El pronóstico de series temporales es crucial en diversos campos, incluyendo ciencia, tecnología, negocios y economía. Un aspecto significativo de salud pública y medioambiental es la concentración de partículas en suspensión, o Particulate Matter (PM), especialmente en áreas urbanas densas como la Ciudad de México. Las partículas fracción gruesa (PMCO), con tamaños micrométricos entre 2.5 μm y 10 μm de diámetro, son de especial preocupación debido a su capacidad de penetrar en los pulmones y el torrente sanguíneo. Para el estudio, se utilizarán datos proporcionados por la Red Automática de Monitoreo Atmosférico (RAMA), gestionada por la Secretaría de Medio Ambiente de la Ciudad de México (SEDEMA). RAMA tiene la responsabilidad de monitorear y registrar la calidad del aire en esta gran metrópolis. El estudio se enfoca específicamente en las partículas PMCO.
+El pronóstico de series temporales es crucial en diversos campos, incluyendo ciencia, tecnología, negocios y economía. Un aspecto significativo de salud pública y medioambiental es la concentración de partículas en suspensión, o Particulate Matter (PM), especialmente en áreas urbanas densas como la Ciudad de México. Las partículas fracción gruesa (PMCO), con tamaños micrométricos entre 2.5 μm y 10 μm de diámetro, son de especial preocupación debido a su capacidad de penetrar en los pulmones y el torrente sanguíneo. 
+
+Para el estudio, se utilizarán datos proporcionados por la Red Automática de Monitoreo Atmosférico (RAMA), gestionada por la Secretaría de Medio Ambiente de la Ciudad de México (SEDEMA). RAMA tiene la responsabilidad de monitorear y registrar la calidad del aire en esta gran metrópolis. El estudio se enfoca específicamente en las partículas PMCO.
 
 ## Data
 
