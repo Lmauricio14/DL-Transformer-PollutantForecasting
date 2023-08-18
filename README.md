@@ -44,6 +44,6 @@ Al utilizar datos históricos de concentraciones de Material Particulado Coarse 
 ---
 ---
 
-<span>![</span><span>Aquí la descripción de la imagen por si no carga</span><span>]</span><span>(</span><span>https://raw.githubusercontent.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/main/Plots/6-HGM.png</span><span>)</span>
+![[texto cualquiera por si no carga la imagen](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/17193475d5d8c853f80d160af1333414bc10074a/Plots/6-AJM.png)https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/17193475d5d8c853f80d160af1333414bc10074a/Plots/6-AJM.png](url completa de la imagen)
 
 **HGM | RMSE: 6.324176146230774**
