@@ -44,6 +44,6 @@ Al utilizar datos históricos de concentraciones de Material Particulado Coarse 
 ---
 ---
 
-<span>![</span><span>Aquí la descripción de la imagen por si no carga</span><span>]</span><span>(</span><span>https://raw.githubusercontent.com/parzibyte/WaterPy/master/assets/ImagenV1.png</span><span>)</span>
+<span>![</span><span>Aquí la descripción de la imagen por si no carga</span><span>]</span><span>(</span><span>Plots/6-HGM.png</span><span>)</span>
 
 **HGM | RMSE: 6.324176146230774**
