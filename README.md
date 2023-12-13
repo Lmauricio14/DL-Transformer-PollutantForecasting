@@ -7,7 +7,7 @@ El pronóstico de series temporales es crucial en diversos campos, incluyendo ci
 
 Para el estudio, se utilizarán datos proporcionados por la Red Automática de Monitoreo Atmosférico (RAMA), gestionada por la Secretaría de Medio Ambiente de la Ciudad de México (SEDEMA). RAMA tiene la responsabilidad de monitorear y registrar la calidad del aire en esta gran metrópolis. El estudio se enfoca específicamente en las partículas PMCO.
 
-![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/Mapa.PNG)
+![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/MAP.PNG)
 
 ## Data
 
@@ -47,29 +47,10 @@ Al utilizar datos históricos de concentraciones de Material Particulado Coarse 
 
 ## Resultados
 
-### 6 days - 12 epoch
+![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Forecasting/results_BJU.PNG)
 
----
+![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Forecasting/results_MER.PNG)
 
-**HGM | RMSE: 6.324176146230774**
-![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/17193475d5d8c853f80d160af1333414bc10074a/Plots/6-HGM.png)
+![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Forecasting/results_UIZ.PNG)
 
-**AJM | RMSE: 4.410079066131078**
-![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/17193475d5d8c853f80d160af1333414bc10074a/Plots/6-AJM.png)
-
-**MGH | RMSE: 6.261936714057293**
-![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/17193475d5d8c853f80d160af1333414bc10074a/Plots/6-MGH.png)
-
-
-### 9 days - 24 epoch
-
----
-
-**MGH | RMSE: 6.261936714057293**
-![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/17193475d5d8c853f80d160af1333414bc10074a/Plots/9-HGM.png)
-
-**MGH | RMSE: 6.261936714057293**
-![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/17193475d5d8c853f80d160af1333414bc10074a/Plots/9-AJM.png)
-
-**MGH | RMSE: 6.14546560045093**
-![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/17193475d5d8c853f80d160af1333414bc10074a/Plots/9-MGH.png)
+![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Forecasting/results_TLA.PNG)
