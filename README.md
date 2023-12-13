@@ -1,13 +1,6 @@
 Time-Series-Forecasting-for-Particles-PMCO-in-CDMX
 # Evaluación de un Modelo Basado en Transformers para el Pronóstico Temporal de Concentraciones de Material Particulado Coarse (PMCO)
 
-Artículo (Overleaf): https://www.overleaf.com/read/sbwhtrdfvjpp
-
-Code 1 (dataset): https://colab.research.google.com/drive/1KtUvBNeUWy2YcsjLW__1owqRk_wWn7JT?usp=sharing
-Code 2 (main): https://colab.research.google.com/drive/1dC-TTHUn46UtAEthWut3zgTQQ2YpShad?usp=sharing
-
----
-
 ## Introduction
 
 El pronóstico de series temporales es crucial en diversos campos, incluyendo ciencia, tecnología, negocios y economía. Un aspecto significativo de salud pública y medioambiental es la concentración de partículas en suspensión, o Particulate Matter (PM), especialmente en áreas urbanas densas como la Ciudad de México. Las partículas fracción gruesa (PMCO), con tamaños micrométricos entre 2.5 μm y 10 μm de diámetro, son de especial preocupación debido a su capacidad de penetrar en los pulmones y el torrente sanguíneo. 
