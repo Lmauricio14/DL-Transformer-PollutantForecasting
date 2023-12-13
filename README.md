@@ -11,21 +11,15 @@ Para el estudio, se utilizarán datos proporcionados por la Red Automática de M
 
 ## Data
 
-Para asegurar la relevancia y la fiabilidad de nuestro análisis, hemos seleccionado la base de datos de RAMA correspondiente a los años 2014-2018. Esta elección se fundamenta en dos consideraciones clave:
+Para asegurar la relevancia y la fiabilidad de nuestro análisis, hemos seleccionado la base de datos de RAMA correspondiente al año 2022. Esta elección se fundamenta en dos consideraciones clave:
 
-- **Estabilidad Temporal**: Optamos por estudiar los cinco años más estables y próximos a la actualidad. Tomamos la decisión de evitar los años 2019-2021, ya que la pandemia de SARS-CoV-2 impuso condiciones atípicas en la Ciudad de México (y en el mundo). 
+- **Estabilidad Temporal**: Optamos por estudiar el año más estable estables y próximo a la actualidad. Tomamos la decisión de evitar los años 2019-2021, ya que la pandemia de SARS-CoV-2 impuso condiciones atípicas en la Ciudad de México (y en el mundo). 
 
 - **Calidad de los Datos**: Para nuestro análisis, seleccionamos las estaciones de monitoreo que presentan los registros más completos y confiables. Esto significa elegir las estaciones con la menor cantidad de datos faltantes durante el periodo de estudio y que estos datos faltantes esten lo mejor distribuidos.
 
-![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/Imp_Estaci%C3%B3n_HGM.png)
+![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/p001.svg)
 
-![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/Imp_Estaci%C3%B3n_AJM.png)
-
-![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/Imp_Estaci%C3%B3n_MGH.png)
-
-  - **HGM** con %5.7 (*Hospital General de México, Cuauhtémoc, CDMX*)
-  - **AJM** con %8.7 (*Ajusco Medio, Tlalpan, CDMX*)
-  - **MGH** con %13.3 (*Miguel Hidalgo, Miguel Hidalgo, CDMX*)
+![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/raw%20statistics.PNG)
 
 ##  Probabilistic Forecasting
 
