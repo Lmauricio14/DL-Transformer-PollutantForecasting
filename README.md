@@ -36,25 +36,19 @@ In preparing the data for analysis, we prioritize databases with minimal missing
 
 ## Probabilistic Forecasting with Transformers
 
-- **Deep Learning in Forecasting**: We integrate deep learning with traditional time series forecasting methods, capturing complex patterns for enhanced predictive accuracy.
+our Transformer model's sophisticated design and strategic training are key in accurately forecasting PMCO concentrations, offering a powerful solution for environmental time series analysis.
 
-- **Transformers for Sequences**: The Transformer model's Encoder-Decoder structure is ideal for time series, excelling in sequential data handling due to its attention mechanisms.
-
-- **Attention Mechanism**: Central to the Transformer, it selectively weighs the importance of different data points in the sequence.
+- **Transformer Architecture**: Utilizes the Encoder-Decoder structure, excelling in handling sequential data with its attention mechanism.
+- **Attention Mechanism**: Focuses selectively on important data parts, crucial for time-dependent PMCO prediction.
   
-  Attention(Q, K, V) = Softmax((QK^T) / sqrt(d_k))V
+  - Attention Formula: `Attention(Q, K, V) = Softmax((QK^T) / sqrt(d_k))V`
+  - Self-Attention: `Self-Attention(X) = Softmax((XW^Q(XW^K)^T) / sqrt(d_model))XW^V`
 
-- **Self-Attention**: This feature allows the model to process each point in context, considering the entire sequence for prediction.
+- **Model Design**: Balanced with 4 layers each in the encoder and decoder, tailored to match our data structure.
+- **Training Process**: Systematic training over 100 epochs, using batch sizes optimized for quality learning and prediction accuracy.
+- **Optimization**: Employing the AdamW optimizer for effective learning rate adjustments.
+- **Forecasting**: Capable of making predictions over various time intervals, validated using the RMSE metric for accuracy.
 
-  Self-Attention(X) = Softmax((XW^Q(XW^K)^T) / sqrt(d_model))XW^V
-
-- **Encoder Complexity**: The encoder uses N blocks to deepen the network, enhancing its ability to encode context from the input sequence.
-
-- **Multi-Head Attention**: This aspect of the model computes attention from different representation subspaces, enriching the context for predictions.
-
-- **Decoder Output**: The decoder generates predictions step-by-step, using masked attention to prevent future data from influencing the forecast.
-
-These elements make the Transformer a powerful tool for forecasting time series data, allowing it to learn and predict complex patterns in PMCO concentration data.
 
 ![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/Transformers-Arquitectura.PNG)
 
