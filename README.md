@@ -20,12 +20,23 @@ For this study, the following tools and database were used:
 
 We selected the RAMA database for the year 2022, avoiding the atypical years of the pandemic. Monitoring stations with complete and reliable records were chosen to ensure data quality.
 
+The selection of monitoring stations was based on statistical rigor, ensuring data completeness and minimal missing values. The chosen stations for this study are:
+
+- **BJU (Benito Juárez), Mexico City:** Exhibiting the lowest range of PMCO concentration.
+- **MER (Merced), Mexico City:** Notable for a slightly higher maximum concentration.
+- **UIZ (UAM Iztapalapa), Mexico City:** Shows higher average and standard deviation of PMCO.
+- **TLA (Tlalnepantla), Mexico State:** Stands out with the highest maximum concentration and standard deviation, presenting a challenging dataset with a significant amount of missing values.
+
+The database's key statistics, including minimum, maximum, mean values, standard deviation, and missing values, highlight the variability across stations, with TLA showing notably higher PMCO concentrations. Our methodology is designed to accurately forecast PMCO behavior even in datasets with many outliers and missing values.
+
+In preparing the data for analysis, we prioritize databases with minimal missing data. Outliers are managed using a z-scores method with a ±3 standard deviation threshold, and missing values are addressed through multiple imputation.
+
 ![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/p001.svg)
 ![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/raw%20statistics.PNG)
 
 ### Probabilistic Forecasting and Time Series Transformer
 
-We address the probabilistic forecasting of PMCO using Transformers, which allow for capturing long-term dependencies and modeling the uncertainty associated with predictions.
+Our approach incorporates advanced deep learning techniques for probabilistic forecasting, contrasting traditional models with cutting-edge methodologies. The Transformer model, central to our study, excels in sequence learning tasks, adapting its Encoder-Decoder architecture to the context of time series forecasting. At the core of the Transformer is the attention mechanism, which prioritizes relevant parts of the data sequence, mimicking the human ability to focus on specific aspects of a scene. This method enhances the model's ability to learn from complex, sequential data and provides a solid foundation for accurate PMCO concentration predictions.
 
 ![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Protocolo/Transformers-Arquitectura.PNG)
 
