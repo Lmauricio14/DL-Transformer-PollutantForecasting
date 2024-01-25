@@ -1,56 +1,41 @@
-Time-Series-Forecasting-for-Particles-PMCO-in-CDMX
-# Evaluación de un Modelo Basado en Transformers para el Pronóstico Temporal de Concentraciones de Material Particulado Coarse (PMCO)
+# Machine Learning for Temporal Forecasting: Transformer-Based Approach to Predict Coarse Particulate Matter (PMCO) Concentrations in Mexico City
 
-## Introduction
+### Introduction
 
-El pronóstico de series temporales es crucial en diversos campos, incluyendo ciencia, tecnología, negocios y economía. Un aspecto significativo de salud pública y medioambiental es la concentración de partículas en suspensión, o Particulate Matter (PM), especialmente en áreas urbanas densas como la Ciudad de México. Las partículas fracción gruesa (PMCO), con tamaños micrométricos entre 2.5 μm y 10 μm de diámetro, son de especial preocupación debido a su capacidad de penetrar en los pulmones y el torrente sanguíneo. 
+Time series forecasting is crucial in various fields, including science, technology, business, and economics. A significant public health and environmental concern is the concentration of suspended particles, or Particulate Matter (PM), especially in densely populated urban areas like Mexico City. Coarse Particulate Matter (PMCO), with micrometric sizes between 2.5 μm and 10 μm in diameter, is of special concern due to its ability to penetrate the lungs and bloodstream.
 
-Para el estudio, se utilizarán datos proporcionados por la Red Automática de Monitoreo Atmosférico (RAMA), gestionada por la Secretaría de Medio Ambiente de la Ciudad de México (SEDEMA). RAMA tiene la responsabilidad de monitorear y registrar la calidad del aire en esta gran metrópolis. El estudio se enfoca específicamente en las partículas PMCO.
+For this study, we use data provided by the Automatic Atmospheric Monitoring Network (RAMA), managed by the Ministry of the Environment of Mexico City (SEDEMA). RAMA is responsible for monitoring and recording air quality in this large metropolis. The study specifically focuses on PMCO particles.
 
 ![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/MAP.PNG)
 
-## Data
+### Tools and Database Used
 
-Para asegurar la relevancia y la fiabilidad de nuestro análisis, hemos seleccionado la base de datos de RAMA correspondiente al año 2022. Esta elección se fundamenta en dos consideraciones clave:
+For this study, the following tools and database were used:
 
-- **Estabilidad Temporal**: Optamos por estudiar el año más estable estables y próximo a la actualidad. Tomamos la decisión de evitar los años 2019-2021, ya que la pandemia de SARS-CoV-2 impuso condiciones atípicas en la Ciudad de México (y en el mundo). 
+- **Python** and its libraries (Pandas, Matplotlib, Seaborn, TensorFlow/PyTorch) for data processing and analysis.
+- **Transformers** for predictive modeling.
+- **RAMA Database (2022)**: Air quality data from Mexico City provided by the Automatic Atmospheric Monitoring Network.
 
-- **Calidad de los Datos**: Para nuestro análisis, seleccionamos las estaciones de monitoreo que presentan los registros más completos y confiables. Esto significa elegir las estaciones con la menor cantidad de datos faltantes durante el periodo de estudio y que estos datos faltantes esten lo mejor distribuidos.
+### Data
+
+We selected the RAMA database for the year 2022, avoiding the atypical years of the pandemic. Monitoring stations with complete and reliable records were chosen to ensure data quality.
 
 ![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/p001.svg)
-
 ![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/raw%20statistics.PNG)
 
-##  Probabilistic Forecasting
+### Probabilistic Forecasting and Time Series Transformer
 
-Más allá de prever un único valor futuro (pronóstico de punto), es crucial estimar la incertidumbre asociada a dichas predicciones. Esto es lo que se conoce como "pronóstico probabilístico". En lugar de entrenar modelos de pronóstico de punto locales, esta investigación busca entrenar modelos probabilísticos globales. Estos modelos, al estar fundamentados en el aprendizaje profundo, tienen la capacidad de aprender representaciones latentes a partir de múltiples series temporales y modelar la incertidumbre asociada a los datos, lo cual es fundamental para una toma de decisiones informada.
-
-## The Time Series Transformer
-
-Para abordar la complejidad de los datos de series temporales, que son intrínsecamente secuenciales, se han explorado diversas arquitecturas de redes neuronales, incluyendo Redes Neuronales Recurrentes (RNN), como las LSTM o GRU, y Redes Convolucionales (CNN). Sin embargo, más recientemente, los Transformers han emergido como una herramienta poderosa para modelar datos secuenciales.
-
-En esta investigación, adoptamos el Transformers, propuesto inicialmente por Vaswani et al. (2017), para la tarea de pronóstico probabilístico univariado de PMCO. La arquitectura Codificador-Decodificador del Transformers es una elección natural para el pronóstico de series temporales, ya que permite generar predicciones a varios pasos en el futuro a partir de datos observados, similar a cómo se generaría texto de manera autoregresiva en tareas de Procesamiento de Lenguaje Natural (NLP).
-
-Esta investigación aborda también los desafíos asociados con el uso de Transformers, como la selección de ventanas de contexto y predicción adecuadas, la incorporación de valores faltantes mediante el uso de máscaras, y la limitación computacional debido a los requisitos cuadráticos de cálculo y memoria del Transformers vainilla.
+We address the probabilistic forecasting of PMCO using Transformers, which allow for capturing long-term dependencies and modeling the uncertainty associated with predictions.
 
 ![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Protocolo/Transformers-Arquitectura.PNG)
 
-## Objetivos de la Investigación
+### Objectives, Hypothesis, and Results of the Research
 
-### Objetivo General
-
-- Evaluar la eficacia de un modelo basado en Transformers en el pronóstico temporal de las concentraciones de Material Particulado Coarse (PMCO) con el fin de determinar su potencial como herramienta de predicción de alta precisión y eficiencia. Probandolo para el forecasting de 6,9,12,24...
-
-## Hipótesis de la Investigación
-
-Al utilizar datos históricos de concentraciones de Material Particulado Coarse (PMCO) y características temporales como variables de entrada, los modelos basados en Transformers, que han demostrado ser efectivos en capturar dependencias a largo plazo en tareas de procesamiento de lenguaje natural, serán capaces de generar predicciones precisas de concentraciones futuras de PMCO como variable de salida. Esto se basa en el supuesto de que existen patrones temporales en las concentraciones de PMCO que pueden ser capturados por estos modelos.
-
-## Resultados
+- **General Objective**: Evaluate the efficacy of Transformers in forecasting PMCO.
+- **Hypothesis**: Transformers can capture temporal patterns in PMCO concentrations to make accurate predictions.
+- **Results**: Visualization of forecasts generated by the model.
 
 ![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Forecasting/results_BJU.PNG)
-
 ![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Forecasting/results_MER.PNG)
-
 ![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Forecasting/results_UIZ.PNG)
-
 ![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Forecasting/results_TLA.PNG)
