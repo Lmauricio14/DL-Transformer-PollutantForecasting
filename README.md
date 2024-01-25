@@ -1,6 +1,6 @@
 # Machine Learning for Temporal Forecasting: Transformer-Based Approach to Predict Coarse Particulate Matter (PMCO) Concentrations in Mexico CitY
 
-### Introduction
+## Introduction
 
 Time series forecasting is crucial in various fields, including science, technology, business, and economics. A significant public health and environmental concern is the concentration of suspended particles, or Particulate Matter (PM), especially in densely populated urban areas like Mexico City. Coarse Particulate Matter (PMCO), with micrometric sizes between 2.5 μm and 10 μm in diameter, is of special concern due to its ability to penetrate the lungs and bloodstream.
 
@@ -8,7 +8,7 @@ For this study, we use data provided by the Automatic Atmospheric Monitoring Net
 
 ![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/MAP.PNG)
 
-### Tools and Database Used
+## Tools and Database Used
 
 For this study, the following tools and database were used:
 
@@ -16,7 +16,7 @@ For this study, the following tools and database were used:
 - **Transformers** for predictive modeling.
 - **RAMA Database (2022)**: Air quality data from Mexico City provided by the Automatic Atmospheric Monitoring Network.
 
-### Data
+## Data
 
 We selected the RAMA database for the year 2022, avoiding the atypical years of the pandemic. Monitoring stations with complete and reliable records were chosen to ensure data quality.
 
@@ -34,13 +34,33 @@ In preparing the data for analysis, we prioritize databases with minimal missing
 ![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/p001.svg)
 ![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/raw%20statistics.PNG)
 
-### Probabilistic Forecasting and Time Series Transformer
+## Probabilistic Forecasting with Transformers
 
-Our approach incorporates advanced deep learning techniques for probabilistic forecasting, contrasting traditional models with cutting-edge methodologies. The Transformer model, central to our study, excels in sequence learning tasks, adapting its Encoder-Decoder architecture to the context of time series forecasting. At the core of the Transformer is the attention mechanism, which prioritizes relevant parts of the data sequence, mimicking the human ability to focus on specific aspects of a scene. This method enhances the model's ability to learn from complex, sequential data and provides a solid foundation for accurate PMCO concentration predictions.
+- **Deep Learning in Forecasting**: We integrate deep learning with traditional time series forecasting methods, capturing complex patterns for enhanced predictive accuracy.
+
+- **Transformers for Sequences**: The Transformer model's Encoder-Decoder structure is ideal for time series, excelling in sequential data handling due to its attention mechanisms.
+
+- **Attention Mechanism**: Central to the Transformer, it selectively weighs the importance of different data points in the sequence.
+
+  ```plaintext
+  Attention(Q, K, V) = Softmax((QK^T) / sqrt(d_k))V
+
+- **Self-Attention**: This feature allows the model to process each point in context, considering the entire sequence for prediction.
+
+  ```plaintext
+  Self-Attention(X) = Softmax((XW^Q(XW^K)^T) / sqrt(d_model))XW^V
+
+- **Encoder Complexity**: The encoder uses N blocks to deepen the network, enhancing its ability to encode context from the input sequence.
+
+- **Multi-Head Attention**: This aspect of the model computes attention from different representation subspaces, enriching the context for predictions.
+
+- **Decoder Output**: The decoder generates predictions step-by-step, using masked attention to prevent future data from influencing the forecast.
+
+These elements make the Transformer a powerful tool for forecasting time series data, allowing it to learn and predict complex patterns in PMCO concentration data.
 
 ![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Protocolo/Transformers-Arquitectura.PNG)
 
-### Objectives, Hypothesis, and Results of the Research
+## Objectives, Hypothesis, and Results of the Research
 
 - **General Objective**: Evaluate the efficacy of Transformers in forecasting PMCO.
 - **Hypothesis**: Transformers can capture temporal patterns in PMCO concentrations to make accurate predictions.
