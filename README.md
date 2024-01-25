@@ -41,13 +41,11 @@ In preparing the data for analysis, we prioritize databases with minimal missing
 - **Transformers for Sequences**: The Transformer model's Encoder-Decoder structure is ideal for time series, excelling in sequential data handling due to its attention mechanisms.
 
 - **Attention Mechanism**: Central to the Transformer, it selectively weighs the importance of different data points in the sequence.
-
-  ```plaintext
+  
   Attention(Q, K, V) = Softmax((QK^T) / sqrt(d_k))V
 
 - **Self-Attention**: This feature allows the model to process each point in context, considering the entire sequence for prediction.
 
-  ```plaintext
   Self-Attention(X) = Softmax((XW^Q(XW^K)^T) / sqrt(d_model))XW^V
 
 - **Encoder Complexity**: The encoder uses N blocks to deepen the network, enhancing its ability to encode context from the input sequence.
@@ -58,7 +56,7 @@ In preparing the data for analysis, we prioritize databases with minimal missing
 
 These elements make the Transformer a powerful tool for forecasting time series data, allowing it to learn and predict complex patterns in PMCO concentration data.
 
-![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Protocolo/Transformers-Arquitectura.PNG)
+![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/Transformers-Arquitectura.PNG)
 
 ## Objectives, Hypothesis, and Results of the Research
 
