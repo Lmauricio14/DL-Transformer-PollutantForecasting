@@ -4,7 +4,13 @@
 
 This repository hosts the research project "Deep Learning for Atmospheric Pollutant Forecasting: Transformer-Based Approach to Predict Coarse Particulate Matter (PMCO) Concentrations in Mexico City". It focuses on employing Artificial Neural Networks (ANNs) to predict PMCO particle concentrations, a significant atmospheric pollutant due to its impact on public health and the environment.
 
-<img src="https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/MAP.PNG" width="350" height="350">
+### Problem Context
+PMCO particles, with diameters between 2.5 and 10 micrometers, originate from sources such as industry, transportation, and fossil fuel burning. They exhibit complex non-linear behaviors, posing substantial analytical challenges.
+
+### Project Objectives
+To address this challenge, the project develops and implements an advanced probabilistic transformer model for temporal prediction of PMCO concentrations. The study analyzes data collected in Mexico City during 2022, evaluating forecasts at intervals of 12, 24, 48, and 72 hours.
+
+<img src="https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/MAP.PNG" width="325" height="325">
 
 ## Tools and Database Used
 
