@@ -15,8 +15,7 @@ To address this challenge, the project develops and implements an advanced proba
 ## Methodology
 
 ### 1. Data Acquisition and Preprocessing
-1.1 **Data Collection:** PMCO concentration data from 2022, sourced from Mexico City's RAMA, SEDEMA, 2023.
-
+1.1 **Data Collection:** PMCO concentration data from 2022, sourced from Mexico City's RAMA, SEDEMA, 2023. \\
 1.2 **Station Selection:** Focused on stations with minimal missing data and outliers.
 
 1.3 **Outlier Removal:** Applied z-scores method with a ±3 standard deviation threshold.
