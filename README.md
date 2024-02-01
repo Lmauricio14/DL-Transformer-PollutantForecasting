@@ -38,6 +38,7 @@ To address this challenge, the project develops and implements an advanced proba
   - 5.2 **Testing Data Loader:** Batch size of 64.
   - 5.3 **Optimizer Settings:** AdamW with a 30-day look-back period.
 
+<img src="https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/flowchart" width="325">
 
 ## Tools and Database Used
 
