@@ -8,28 +8,49 @@ This repository hosts the research project "Deep Learning for Atmospheric Pollut
 PMCO particles, with diameters between 2.5 and 10 micrometers, originate from sources such as industry, transportation, fossil fuel burning, etc. They exhibit complex non-linear behaviors, posing substantial analytical challenges.
 
 ### Project Objectives
-To address this challenge, the project develops and implements an advanced probabilistic transformer model for temporal prediction of PMCO concentrations. The study analyzes data collected in Mexico City during 2022, evaluating forecasts at intervals of 12, 24, 48, and 72 hours.
+To address this challenge, the project develops and implements an advanced probabilistic transformer model for temporal prediction of PMCO concentrations. The study analyzes data collected in Mexico City during 2022, evaluating forecasts at intervals of 12, 24, 48, and 72 hours with help to Root Mean Square Error (RMSE).
 
 <img src="https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/MAP.PNG" width="325" height="325">
+
+## Methodology
+
+### Data Acquisition and Preprocessing
+- **Data Collection:** PMCO concentration data from 2022, sourced from Mexico City's RAMA, SEDEMA, 2023.
+- **Station Selection:** Focused on stations with minimal missing data and outliers.
+- **Outlier Removal:** Applied z-scores method with a ±3 standard deviation threshold.
+- **Missing Value Imputation:** Employed MICE (Multiple Imputation by Chained Equations) for handling missing data.
+
+### Model Development and Training
+- **Model Architecture:** Constructed using the TimeSeriesTransformerForPrediction class, tailored for PMCO forecasting.
+- **Layer Configuration:** Balanced with 4 layers each in encoder and decoder, and a 32-dimensional model structure.
+- **Activation Function:** Utilized ReLU for introducing non-linearity.
+
+### Training Process
+- **Data Batching:** Formatted data into batches of 256 for each of the 100 epochs. Testing done with batches of 64.
+- **Optimizer:** Employed AdamW optimizer for adaptive learning rates and better handling of sparse gradients, with beta values set at 0.9 and 0.95.
+
+### Forecasting and Validation
+- **Forecasting Horizon:** Predicted future PMCO values at intervals of 12, 24, 48, and 72 hours.
+- **Model Validation:** Used Root Mean Square Error (RMSE) to compare predictions against actual values for accuracy assessment.
+
+### Hyperparameters
+- **Training Data Loader:** Batch size of 256 with 100 batches per epoch.
+- **Testing Data Loader:** Batch size of 64.
+- **Optimizer Settings:** AdamW with a 30-day look-back period.
+
 
 ## Tools and Database Used
 
 For this study, the following tools and database were used:
 
-- **Python** and its libraries (Pandas, Matplotlib, Seaborn, TensorFlow/PyTorch) for data processing and analysis.
-- **Transformers** for predictive modeling.
-- **RAMA Database (2022)**: Air quality data from Mexico City provided by the Automatic Atmospheric Monitoring Network.
-
-## Data
-
-We selected the RAMA database for the year 2022, avoiding the atypical years of the pandemic. Monitoring stations with complete and reliable records were chosen to ensure data quality.
-
-The selection of monitoring stations was based on statistical rigor, ensuring data completeness and minimal missing values. The chosen stations for this study are:
-
-- **BJU (Benito Juárez), Mexico City:** Exhibiting the lowest range of PMCO concentration.
-- **MER (Merced), Mexico City:** Notable for a slightly higher maximum concentration.
-- **UIZ (UAM Iztapalapa), Mexico City:** Shows higher average and standard deviation of PMCO.
-- **TLA (Tlalnepantla), Mexico State:** Stands out with the highest maximum concentration and standard deviation, presenting a challenging dataset with a significant amount of missing values.
+- **Python** and its libraries; Python, Pandas, Matplotlib, Seaborn and TensorFlow/PyTorch for data processing and analysis.
+- **Forcasting model**: Transformer-based deep learning neural network.
+- **Data source**: Automatic Atmospheric Monitoring Network (RAMA) of Mexico City for the year 2022.
+- **Selected monitoring stations**: 
+  - **BJU (Benito Juárez), Mexico City:** Exhibiting the lowest range of PMCO concentration.
+  - **MER (Merced), Mexico City:** Notable for a slightly higher maximum concentration.
+  - **UIZ (UAM Iztapalapa), Mexico City:** Shows higher average and standard deviation of PMCO.
+  - **TLA (Tlalnepantla), Mexico State:** Stands out with the highest maximum concentration and standard deviation, presenting a challenging dataset with a significant amount of missing values.
 
 The database's key statistics, including minimum, maximum, mean values, standard deviation, and missing values, highlight the variability across stations, with TLA showing notably higher PMCO concentrations. Our methodology is designed to accurately forecast PMCO behavior even in datasets with many outliers and missing values.
 
