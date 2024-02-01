@@ -21,7 +21,10 @@ To address this challenge, the project develops and implements an advanced proba
   - 1.4 **Missing Value Imputation:** Employed MICE (Multiple Imputation by Chained Equations) for handling missing data.
 
 ### 2. Model Development and Training
-  - 2.1 **Model Architecture:** Constructed using the TimeSeriesTransformerForPrediction class, tailored for PMCO forecasting.
+  - 2.1 **Transformer Architecture**: Utilizes the Encoder-Decoder structure, excelling in handling sequential data with its attention mechanism.
+    - 2.1.1 **Attention Mechanism**: Focuses selectively on important data parts, crucial for time-dependent PMCO prediction.
+      - Attention Formula: `Attention(Q, K, V) = Softmax((QK^T) / sqrt(d_k))V`
+      - Self-Attention: `Self-Attention(X) = Softmax((XW^Q(XW^K)^T) / sqrt(d_model))XW^V`
   - 2.2 **Layer Configuration:** Balanced with 4 layers each in encoder and decoder, and a 32-dimensional model structure.
   - 2.3 **Activation Function:** Utilized ReLU for introducing non-linearity.
 
@@ -39,6 +42,7 @@ To address this challenge, the project develops and implements an advanced proba
   - 5.3 **Optimizer Settings:** AdamW with a 30-day look-back period.
 
 <img src="https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/flowchart.svg" width="350">
+<img src="https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/Transformers-Arquitectura.PNG" width="350">
 
 ## Tools and Database Used
 
@@ -57,23 +61,6 @@ For this study, the following tools and database were used:
 <img src=https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/p001.svg width="600">
 <img src=https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/raw%20statistics.PNG width="475">
 
-## Probabilistic Forecasting with Transformers
-
-our Transformer model's sophisticated design and strategic training are key in accurately forecasting PMCO concentrations, offering a powerful solution for environmental time series analysis.
-
-- **Transformer Architecture**: Utilizes the Encoder-Decoder structure, excelling in handling sequential data with its attention mechanism.
-- **Attention Mechanism**: Focuses selectively on important data parts, crucial for time-dependent PMCO prediction.
-  
-  - Attention Formula: `Attention(Q, K, V) = Softmax((QK^T) / sqrt(d_k))V`
-  - Self-Attention: `Self-Attention(X) = Softmax((XW^Q(XW^K)^T) / sqrt(d_model))XW^V`
-
-- **Model Design**: Balanced with 4 layers each in the encoder and decoder, tailored to match our data structure.
-- **Training Process**: Systematic training over 100 epochs, using batch sizes optimized for quality learning and prediction accuracy.
-- **Optimization**: Employing the AdamW optimizer for effective learning rate adjustments.
-- **Forecasting**: Capable of making predictions over various time intervals, validated using the RMSE metric for accuracy.
-
-
-![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/Transformers-Arquitectura.PNG)
 
 ## Objectives, Hypothesis, and Results of the Research
 
