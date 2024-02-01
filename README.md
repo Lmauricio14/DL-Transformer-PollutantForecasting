@@ -14,26 +14,26 @@ To address this challenge, the project develops and implements an advanced proba
 
 ## Methodology
 
-### Data Acquisition and Preprocessing
-- **Data Collection:** PMCO concentration data from 2022, sourced from Mexico City's RAMA, SEDEMA, 2023.
+### 1. Data Acquisition and Preprocessing
+1.1 **Data Collection:** PMCO concentration data from 2022, sourced from Mexico City's RAMA, SEDEMA, 2023.
 - **Station Selection:** Focused on stations with minimal missing data and outliers.
 - **Outlier Removal:** Applied z-scores method with a ±3 standard deviation threshold.
 - **Missing Value Imputation:** Employed MICE (Multiple Imputation by Chained Equations) for handling missing data.
 
-### Model Development and Training
+### 2. Model Development and Training
 - **Model Architecture:** Constructed using the TimeSeriesTransformerForPrediction class, tailored for PMCO forecasting.
 - **Layer Configuration:** Balanced with 4 layers each in encoder and decoder, and a 32-dimensional model structure.
 - **Activation Function:** Utilized ReLU for introducing non-linearity.
 
-### Training Process
+### 3. Training Process
 - **Data Batching:** Formatted data into batches of 256 for each of the 100 epochs. Testing done with batches of 64.
 - **Optimizer:** Employed AdamW optimizer for adaptive learning rates and better handling of sparse gradients, with beta values set at 0.9 and 0.95.
 
-### Forecasting and Validation
+### 4. Forecasting and Validation
 - **Forecasting Horizon:** Predicted future PMCO values at intervals of 12, 24, 48, and 72 hours.
 - **Model Validation:** Used Root Mean Square Error (RMSE) to compare predictions against actual values for accuracy assessment.
 
-### Hyperparameters
+### 5. Hyperparameters
 - **Training Data Loader:** Batch size of 256 with 100 batches per epoch.
 - **Testing Data Loader:** Batch size of 64.
 - **Optimizer Settings:** AdamW with a 30-day look-back period.
@@ -53,8 +53,8 @@ For this study, the following tools and database were used:
   - **TLA (Tlalnepantla), Mexico State:** Stands out with the highest maximum concentration and standard deviation, presenting a challenging dataset with a significant amount of missing values.
 
 
-<img src=https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/p001.svg width="500">
-<img src=https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/raw%20statistics.PNG width="400">
+<img src=https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/p001.svg width="550">
+<img src=https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/raw%20statistics.PNG width="450">
 
 ## Probabilistic Forecasting with Transformers
 
