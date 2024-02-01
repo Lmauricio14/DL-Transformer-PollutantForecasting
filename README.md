@@ -1,4 +1,4 @@
-# Machine Learning for Temporal Forecasting: Transformer-Based Approach to Predict Coarse Particulate Matter (PMCO) Concentrations in Mexico CitY
+# Deep Learning for Atmospheric Pollutant Forecasting: Transformer-Based Approach to Predict Coarse Particulate Matter (PMCO) Concentrations in Mexico City
 
 ## Introduction
 
