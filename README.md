@@ -16,26 +16,35 @@ To address this challenge, the project develops and implements an advanced proba
 
 ### 1. Data Acquisition and Preprocessing
 1.1 **Data Collection:** PMCO concentration data from 2022, sourced from Mexico City's RAMA, SEDEMA, 2023.
+
 1.2 **Station Selection:** Focused on stations with minimal missing data and outliers.
+
 1.3 **Outlier Removal:** Applied z-scores method with a ±3 standard deviation threshold.
+
 1.4 **Missing Value Imputation:** Employed MICE (Multiple Imputation by Chained Equations) for handling missing data.
 
 ### 2. Model Development and Training
 2.1 **Model Architecture:** Constructed using the TimeSeriesTransformerForPrediction class, tailored for PMCO forecasting.
+
 2.2 **Layer Configuration:** Balanced with 4 layers each in encoder and decoder, and a 32-dimensional model structure.
+
 2.3 **Activation Function:** Utilized ReLU for introducing non-linearity.
 
 ### 3. Training Process
 3.1 **Data Batching:** Formatted data into batches of 256 for each of the 100 epochs. Testing done with batches of 64.
+
 3.2 **Optimizer:** Employed AdamW optimizer for adaptive learning rates and better handling of sparse gradients, with beta values set at 0.9 and 0.95.
 
 ### 4. Forecasting and Validation
 4.1 **Forecasting Horizon:** Predicted future PMCO values at intervals of 12, 24, 48, and 72 hours.
+
 4.2 **Model Validation:** Used Root Mean Square Error (RMSE) to compare predictions against actual values for accuracy assessment.
 
 ### 5. Hyperparameters
 5.1 **Training Data Loader:** Batch size of 256 with 100 batches per epoch.
+
 5.2 **Testing Data Loader:** Batch size of 64.
+
 5.3 **Optimizer Settings:** AdamW with a 30-day look-back period.
 
 
