@@ -52,12 +52,9 @@ For this study, the following tools and database were used:
   - **UIZ (UAM Iztapalapa), Mexico City:** Shows higher average and standard deviation of PMCO.
   - **TLA (Tlalnepantla), Mexico State:** Stands out with the highest maximum concentration and standard deviation, presenting a challenging dataset with a significant amount of missing values.
 
-The database's key statistics, including minimum, maximum, mean values, standard deviation, and missing values, highlight the variability across stations, with TLA showing notably higher PMCO concentrations. Our methodology is designed to accurately forecast PMCO behavior even in datasets with many outliers and missing values.
 
-In preparing the data for analysis, we prioritize databases with minimal missing data. Outliers are managed using a z-scores method with a ±3 standard deviation threshold, and missing values are addressed through multiple imputation.
-
-![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/p001.svg)
-![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/raw%20statistics.PNG)
+<img src=https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/p001.svg width="325">
+<img src=https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/raw%20statistics.PNG width="325">
 
 ## Probabilistic Forecasting with Transformers
 
