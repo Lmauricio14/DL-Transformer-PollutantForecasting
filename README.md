@@ -48,7 +48,7 @@ To address this challenge, the project develops and implements an advanced proba
 
 For this study, the following tools and database were used:
 
-- **Python** and its libraries; Python, Pandas, Matplotlib, Seaborn and TensorFlow/PyTorch for data processing and analysis.
+- **Python** and its libraries; Python, Pandas, Matplotlib, Seaborn, gluonts and TensorFlow/PyTorch for data processing and analysis.
 - **Forcasting model**: Transformer-based deep learning neural network.
 - **Data source**: Automatic Atmospheric Monitoring Network (RAMA) of Mexico City for the year 2022.
 - **Selected monitoring stations**: 
