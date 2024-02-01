@@ -74,6 +74,7 @@ Presentation of the model's results, including comparisons and accuracy analysis
 [Go to file "Forcasting"]
 
 Full panorama:
+
 <img src=https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Forecasting/BJU.PNG width="700">
 <img src=https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Forecasting/MER.PNG width="700">
 <img src=https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Forecasting/UIZ.PNG width="700">
