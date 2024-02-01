@@ -2,11 +2,9 @@
 
 ## Introduction
 
-Time series forecasting is crucial in various fields, including science, technology, business, and economics. A significant public health and environmental concern is the concentration of suspended particles, or Particulate Matter (PM), especially in densely populated urban areas like Mexico City. Coarse Particulate Matter (PMCO), with micrometric sizes between 2.5 μm and 10 μm in diameter, is of special concern due to its ability to penetrate the lungs and bloodstream.
+This repository hosts the research project "Deep Learning for Atmospheric Pollutant Forecasting: Transformer-Based Approach to Predict Coarse Particulate Matter (PMCO) Concentrations in Mexico City". It focuses on employing Artificial Neural Networks (ANNs) to predict PMCO particle concentrations, a significant atmospheric pollutant due to its impact on public health and the environment.
 
-For this study, we use data provided by the Automatic Atmospheric Monitoring Network (RAMA), managed by the Ministry of the Environment of Mexico City (SEDEMA). RAMA is responsible for monitoring and recording air quality in this large metropolis. The study specifically focuses on PMCO particles.
-
-![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/MAP.PNG)
+<img src="https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Estaciones/MAP.PNG" width="300" height="300">
 
 ## Tools and Database Used
 
