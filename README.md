@@ -80,4 +80,5 @@ Full panorama:
 <img src=https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Forecasting/UIZ.PNG width="700">
 <img src=https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Forecasting/TLA.PNG width="700">
 
-
+## Confidentiality and Collaboration
+Due to the confidential nature of certain aspects of this project, only the *data preprocessing code* will be shared publicly. For potential collaborations, please contact me directly at lmauricio14@alumnos.uaq.mx.
