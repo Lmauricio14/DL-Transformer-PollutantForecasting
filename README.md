@@ -57,17 +57,13 @@ For this study, the following tools and database were used:
   - **UIZ (UAM Iztapalapa), Mexico City:** Shows higher average and standard deviation of PMCO.
   - **TLA (Tlalnepantla), Mexico State:** Stands out with the highest maximum concentration and standard deviation, presenting a challenging dataset with a significant amount of missing values.
 
-
 <img src=https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Figures/raw-data.svg width="600">
-<img src=https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Figures/raw-statistics.PNG width="475">
-
 | Estaciones | Min (µg/m³) | Max (µg/m³) | Mean (µg/m³) | σ (µg/m³) | Missing Values |
 |------------|-------------|-------------|--------------|------------|----------------|
 | BJU        | 1.0         | 146.0       | 13.200403    | 8.635373   | 332            |
 | MER        | 1.0         | 161.0       | 17.154006    | 10.451417  | 1059           |
 | UIZ        | 1.0         | 158.0       | 19.866365    | 12.862693  | 1247           |
 | TLA        | 1.0         | 520.0       | 26.823141    | 18.358227  | 1336           |
-
 
 ## Objectives, Hypothesis, and Results of the Research
 
