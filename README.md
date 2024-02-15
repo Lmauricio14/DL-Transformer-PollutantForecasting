@@ -10,7 +10,7 @@ PMCO particles, with diameters between 2.5 and 10 micrometers, originate from so
 ### Project Objectives
 To address this challenge, the project develops and implements an advanced probabilistic transformer model for temporal prediction of PMCO concentrations. The study analyzes data collected in Mexico City during 2022, evaluating forecasts at intervals of 12, 24, 48, and 72 hours with help to Root Mean Square Error (RMSE).
 
-<img src="https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Figures/Map.PNG" width="325" height="325">
+<img src="https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Figures/Map.PNG" width="325">
 
 ## Methodology
 
@@ -43,7 +43,7 @@ To address this challenge, the project develops and implements an advanced proba
 
 | Project Flowchart | Transformer Algorithm Flowchart |
 |-------------------|---------------------------------|
-| ![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Figures/flowchart.svg) | ![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Figures/Transformers-Arquitectura.PNG) |
+| <img src="https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Figures/flowchart.svg" width="325"> | <img src="https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Figures/Transformers-Arquitectura.PNG" width="325"> |
 
 
 ## Tools and Database Used
