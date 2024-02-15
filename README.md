@@ -41,8 +41,10 @@ To address this challenge, the project develops and implements an advanced proba
   - 5.2 **Testing Data Loader:** Batch size of 64.
   - 5.3 **Optimizer Settings:** AdamW with a 30-day look-back period.
 
-<img src="https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Figures/flowchart.svg" width="350">
-<img src="https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Figures/Transformers-Arquitectura.PNG" width="350">
+| Project Flowchart | Transformer Algorithm Flowchart |
+|-------------------|---------------------------------|
+| ![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Figures/flowchart.svg) | ![](https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Figures/Transformers-Arquitectura.PNG) |
+
 
 ## Tools and Database Used
 
@@ -58,6 +60,7 @@ For this study, the following tools and database were used:
   - **TLA (Tlalnepantla), Mexico State:** Stands out with the highest maximum concentration and standard deviation, presenting a challenging dataset with a significant amount of missing values.
 
 <img src=https://github.com/Lmauricio14/Time-Series-Forecasting-for-Particles-PMCO-in-CDMX/blob/main/Figures/raw-data.svg width="600">
+
 | Estaciones | Min (µg/m³) | Max (µg/m³) | Mean (µg/m³) | σ (µg/m³) | Missing Values |
 |------------|-------------|-------------|--------------|------------|----------------|
 | BJU        | 1.0         | 146.0       | 13.200403    | 8.635373   | 332            |
